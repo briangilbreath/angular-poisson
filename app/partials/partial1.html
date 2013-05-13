@@ -1,0 +1,18 @@
+<div ng-controller="PoissonController">
+      <form novalidate class="simple-form">
+       	x:   <input type="number" ng-model="poisson.x" smart-float ng-init="poisson.x = 0 "/><br />
+        k:   <input type="number" ng-model="poisson.k" smart-float ng-init="poisson.k = 10 "/><br />
+        phi: <input type="number" ng-model="poisson.phi" smart-float ng-init="poisson.phi = 1.7 "/><br />
+        <button ng-click="reset()"class="btn">RESET</button>
+        <button ng-click="update(poisson)" class="btn">CALCULATE</button>
+      </form>
+ 		<pre>form = {{poisson | json}}</pre>
+      <div class="hc-pie" items="poissonResults"></div>
+     
+      <pre>poisson = {{poissonResults | json}}</pre>
+
+
+
+    </div>
+
+ 

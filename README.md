@@ -1,4 +1,5 @@
-# angular-poisson — a way to generate poisson distributions and graphs
+# angular-poisson 
+— a way to generate poisson distributions and graphs
 
 
 ## Contact

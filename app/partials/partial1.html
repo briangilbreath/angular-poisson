@@ -1,12 +1,27 @@
 <div ng-controller="PoissonController">
-      <form novalidate class="simple-form">
-       	x:   <input type="number" ng-model="poisson.x" smart-float ng-init="poisson.x = 0 "/><br />
-        k:   <input type="number" ng-model="poisson.k" smart-float ng-init="poisson.k = 10 "/><br />
-        phi: <input type="number" ng-model="poisson.phi" smart-float ng-init="poisson.phi = 1.7 "/><br />
+      <form novalidate class="simple-form span4">
+       
+
+       		<div class="control-group input-prepend">
+              <button class="btn" data-trigger="click" bs-tooltip="xTooltip.info">&Chi;</button>
+			  <input  type="number" ng-model="poisson.x" smart-float ng-init="poisson.x = 0 "/>
+            </div><br />
+
+            <div class="control-group input-prepend">
+              <button class="btn" data-trigger="click" bs-tooltip="kTooltip.info">&Kappa;</button>
+			  <input  type="number" ng-model="poisson.k" smart-float ng-init="poisson.k = 10 "/>
+            </div><br />
+
+            <div class="control-group input-prepend">
+              <button class="btn" data-trigger="click" bs-tooltip="phiTooltip.info">  &Phi;</button>
+			  <input  type="number" ng-model="poisson.phi" smart-float ng-init="poisson.phi = 1.7 "/>
+            </div><br />
+
         <button ng-click="reset()"class="btn">RESET</button>
-        <button ng-click="update(poisson)" class="btn">CALCULATE</button>
+        <button ng-click="update(poisson)" class="btn btn-primary">CALCULATE</button>
+
       </form>
- 		<pre>form = {{poisson | json}}</pre>
+ 		<pre class="span6">form = {{poisson | json}}</pre>
       <div class="hc-pie" items="poissonResults"></div>
      
       <pre>poisson = {{poissonResults | json}}</pre>

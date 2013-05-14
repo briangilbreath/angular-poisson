@@ -12,6 +12,7 @@
 
   angular.module('myApp.directives', [])
   .directive('hcPie', function () {
+
   return {
     restrict: 'C',
     replace: true,
@@ -19,12 +20,10 @@
       items: '='
     },
     controller: function ($scope, $element, $attrs) {
-      console.log(2);
 
     },
     template: '<div id="container" style="margin: 0 auto">not working</div>',
     link: function (scope, element, attrs) {
-      console.log(3);
       var chart = new Highcharts.Chart({
         chart: {
           renderTo: 'container',
@@ -62,7 +61,7 @@
         },
         series: [{
           type: 'column',
-          name: 'Phi',
+          name: 'Discrete Outcomes',
           data: scope.items
         }]
       });

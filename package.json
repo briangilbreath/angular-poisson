@@ -1,0 +1,21 @@
+{
+  "name": "angular-poisson",
+  "version": "0.0.0",
+  "description": "— a way to generate poisson distributions and graphs",
+  "main": "web.js",
+  "dependencies": {
+    "node-static": "~0.6.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/briangilbreath/angular-poisson.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "gitHead": "1a84843a1c8a924cc0dae427908a07137e5c6bfe",
+  "readmeFilename": "README.md"
+}
